@@ -1,0 +1,64 @@
+body {
+    background-color: blanchedalmond;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+#footer_home {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+h1 {
+    font-family: Franklin Gothic Medium;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Franklin Gothic Medium;
+    font-size: 50px;
+    text-align: center;
+}
+
+a {
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+#form_registrar_usuario {
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#tablaRegistro {
+    background-color: blanchedalmond;
+    font-family: sans-serif;
+    font-size: medium;
+    border-style: groove;
+    border-radius: 15px;
+}

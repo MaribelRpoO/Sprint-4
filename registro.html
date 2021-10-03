@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <title>Sprint 3: Guardar información de Registro</title>
+
+    <script src="js/validaciones.js"> </script>
+</head>
+
+<body>
+
+    <nav id="navegacion_home">
+        <table bgcolor="#ac8cfc" widht="100%">
+            <tr> 
+                <td width="10%"></td>
+                <td> <img src="imagenes/logoropa.png" alt="LogoRopa" id="logo_home" width="30%" height="30%"></td>
+                <td width="10%"></td>
+                <td><button id="btn_abrir_registro"> 
+                    <a href="index.html" id="link_inicio"> Inicio </a>
+                    </button>
+                </td>
+                <td><button id="btn_abrir_registro"> 
+                    <a href="registro.html" id="link_abrir_registro"> Registrarse </a>
+                    </button>
+                </td>
+                <td width="30%"></td>
+            </tr>
+        </table>
+    </nav>
+    
+    
+    <h2>    Fomulario de Registro   </h2>
+
+    <center>
+
+        <form action="" method="POST" name= formRegistro id="form_registrar_usuario" onkeydown="return event.key != 'Enter';" >
+            <!--    En el form: onkeydown != enter, es para evitar que se envie el formulario al pulsar enter.        -->
+
+            <table id="tablaRegistro">
+                
+                <tr>    <td>    Nombre de Usuario:  </td>
+                        <td>    <input type="text" id="nombre_usuario_input" name="Nombre" placeholder="Usuario" required onBlur="return validar_nombre_usuario();"/>    </td>
+                </tr>
+                <tr>    <td>    Año de nacimiento:  </td>
+                        <td>    <input type="number" id="anoNacimiento_usuario_input" name="Año" placeholder="1900-2022" required onblur="validar_anoNacimiento_usuario();"/>   </td>
+                </tr>
+                <tr>    <td>    Contraseña: </td>
+                        <td>    <input type="password" id="contrasena_usuario_input" name="Contraseña" placeholder="******"  required onblur="validar_contrasena(document.getElementById('contrasena_usuario_input').value);"/>  </td>
+                </tr>
+                <tr>    <td>    Confirmar Contraseña: </td>
+                        <td>    <input type="password" id="confirmar_contrasena_input" name="Contraseña2" placeholder="******" required onblur="confirmar_contrasena(document.getElementById('contrasena_usuario_input').value, document.getElementById('confirmar_contrasena_input').value);"/>  </td>
+                </tr>
+                </table>        
+            
+            <br>
+            <button type="button" id="enviar_registro" name="button" onclick="agregarRegistro();"/>   Enviar  </button>
+            <button type="reset" id="borrar_registros" name="borrar_registros"> Borrar  </button>
+
+        </form>
+
+    </center>
+
+</body>
+</html>
+
